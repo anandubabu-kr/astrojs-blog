@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Hamburger from '../components/Hamburger.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const {pageTitle} =Astro.props;
@@ -13,7 +14,9 @@ const {pageTitle} =Astro.props;
     <title>{pageTitle}</title>
   </head>
   <body>
+  <Hamburger/>
     <Navigation />
+
     <h1>{pageTitle}</h1>
         <slot />
     <Footer />

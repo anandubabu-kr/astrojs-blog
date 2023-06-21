@@ -1,6 +1,7 @@
 ---
-  import Navigation from '../components/Navigation.astro';
-  import Hamburger from '../components/Hamburger.astro';
+import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+ 
 import '../styles/global.css';
 import Footer from '../components/Footer.astro';
 const pageTitle = "About Me";
@@ -19,26 +20,8 @@ const finished = false;
 const goal = 3;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset ="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-        <style define:vars={{skillColor}}>
-      h1 {
-        color: green;
-        font-size: 2rem;
-      }
-       .skill {
-    color: var(--skillColor);
-   font-weight: bold;
- }
-    </style>
-  </head>
-  <body>
-  <Hamburger/>
- <Navigation/>
-    <h1>{pageTitle}</h1>
+
+<BaseLayout pageTitle={pageTitle}>
 
     <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 
@@ -61,9 +44,5 @@ const goal = 3;
 {finished && <p>I finished this tutorial!</p>}
 
 {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
-   <Footer />
- <script>
-   import "../scripts/menu.js";
- </script>
-  </body>
-</html>
+
+</BaseLayout>
