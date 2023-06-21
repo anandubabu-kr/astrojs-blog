@@ -21,7 +21,7 @@ const goal = 3;
 ---
 
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout pageTitle="{pageTitle}">
   <p>
     I am working through Astro's introductory tutorial. This is the second page
     on my website, and it's the first one I built myself!
