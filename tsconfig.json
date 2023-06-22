@@ -3,7 +3,10 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["src/components/*"]
+    }
   },
   "include": ["src"]
 }
