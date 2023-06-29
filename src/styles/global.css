@@ -1,5 +1,8 @@
 :root {
   --darkBG: #0e2954;
+  --blueMd: #19376d;
+  --blueLt: #576cbc;
+  --blueSk: #a5d7e8;
 }
 
 html {
@@ -67,7 +70,7 @@ header nav {
   height: 5px;
   border-radius: 10px;
   margin-bottom: 8px;
-  background-color: #576cbc;
+  background-color: var(--blueLt);
 }
 h1 {
   margin: 1rem 0;
@@ -96,7 +99,7 @@ h1 {
 
 .nav-links a:hover,
 a:focus {
-  background-color: #19376d;
+  background-color: var(--blueMd);
   color: #a5d7e8;
 }
 
@@ -124,7 +127,7 @@ pre {
     position: static;
     width: auto;
     background: none;
-    border-bottom: 2px solid #0d0999;
+    border-bottom: 2px solid var(--blueSk);
   }
 
   .nav-links a {
