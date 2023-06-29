@@ -20,6 +20,30 @@ body {
   line-height: 1.5;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -39,7 +63,7 @@ header nav {
   height: 5px;
   border-radius: 10px;
   margin-bottom: 8px;
-  background-color: #ff9776;
+  background-color: #0d0999;
 }
 h1 {
   margin: 1rem 0;
@@ -52,7 +76,7 @@ h1 {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #0d0950;
   display: none;
   margin: 0;
 }
@@ -69,7 +93,11 @@ h1 {
 
 .nav-links a:hover,
 a:focus {
-  background-color: #ff9776;
+  background-color: #07063d;
+}
+
+a {
+  text-decoration: none;
 }
 
 .expanded {
