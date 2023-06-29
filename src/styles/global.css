@@ -1,10 +1,14 @@
+:root {
+  --darkBG: #0e2954;
+}
+
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
 }
 
 html.dark {
-  background-color: #0d0950;
+  background-color: var(--darkBG);
   color: #fff;
 }
 
@@ -63,7 +67,7 @@ header nav {
   height: 5px;
   border-radius: 10px;
   margin-bottom: 8px;
-  background-color: #0d0999;
+  background-color: #576cbc;
 }
 h1 {
   margin: 1rem 0;
@@ -76,7 +80,6 @@ h1 {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #0d0950;
   display: none;
   margin: 0;
 }
@@ -93,7 +96,8 @@ h1 {
 
 .nav-links a:hover,
 a:focus {
-  background-color: #07063d;
+  background-color: #19376d;
+  color: #a5d7e8;
 }
 
 a {
@@ -120,7 +124,7 @@ pre {
     position: static;
     width: auto;
     background: none;
-    border-bottom: 2px solid #ff9776;
+    border-bottom: 2px solid #0d0999;
   }
 
   .nav-links a {
