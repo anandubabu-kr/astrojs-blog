@@ -1,6 +1,6 @@
 ---
 layout: layouts/MarkdownPostLayout.astro
-title: 'Custom hooks'
+title: 'Custom Hooks'
 pubDate: 2023-22-06
 description: ''
 author: 'Anandu Babu'
