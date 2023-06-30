@@ -4,9 +4,6 @@ title: 'Error Boundary'
 pubDate: 2023-22-06
 description: ''
 author: 'Anandu Babu'
-image:
-    url: 'https://docs.astro.build/assets/full-logo-lighjt.png' 
-    alt: 'The full reactjs logo.'
 tags: ["astro", "blogging", "learning in public"]
 
 ---
