@@ -6,10 +6,10 @@ const pageTitle = "My Astro Learning Blog";
 
 <BaseLayout pageTitle={pageTitle}>
   <p>This is where I will post about my journey learning Astro.</p>
-  <ul>
+  <ul class='blog-links'>
     {allPosts.map((post) => (
-      <li>
-        <a href={post.url}>{post.frontmatter.title}</a>
+      <li class='blog-link'>
+        <a class='blog-link' href={post.url}>{post.frontmatter.title}</a>
       </li>
     ))}
   </ul>

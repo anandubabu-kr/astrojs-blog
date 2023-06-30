@@ -1,8 +1,8 @@
 :root {
-  --darkBG: #0e2954;
-  --blueMd: #19376d;
-  --blueLt: #576cbc;
-  --blueSk: #a5d7e8;
+  --darkBG: #222831;
+  --blueLt: #2d4059;
+  --accentPr: #ff5722;
+  --accentSec: #f6c90e;
 }
 
 html {
@@ -27,30 +27,29 @@ body {
   line-height: 1.5;
 }
 
-/* width */
+/* Scroll */
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
   border-radius: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 5px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
+/* Scroll */
 header nav {
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,7 @@ header nav {
   height: 5px;
   border-radius: 10px;
   margin-bottom: 8px;
-  background-color: var(--blueLt);
+  background-color: var(--accentPr);
 }
 h1 {
   margin: 1rem 0;
@@ -94,17 +93,34 @@ h1 {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
+  color: var(--darkBG);
   text-transform: uppercase;
 }
 
 .nav-links a:hover,
 a:focus {
-  background-color: var(--blueMd);
-  color: #a5d7e8;
+  /* background-color: var(--accentSec); */
+  color: var(--accentPr);
 }
 
-a {
+a.blog-link {
+  display: block;
+  padding: 8px 6px;
   text-decoration: none;
+  color: var(--accentSec);
+}
+
+ul.blog-links {
+  padding: 0px;
+  margin: 0px;
+}
+
+li.blog-link {
+  list-style: none;
+}
+
+a.blog-link:hover {
+  color: var(--accentPr);
 }
 
 .expanded {
@@ -127,7 +143,7 @@ pre {
     position: static;
     width: auto;
     background: none;
-    border-bottom: 2px solid var(--blueSk);
+    border-bottom: 2px solid var(--accentPr);
   }
 
   .nav-links a {
