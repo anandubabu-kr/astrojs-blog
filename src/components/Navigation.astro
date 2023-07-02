@@ -9,3 +9,46 @@
  <script>
    import "../scripts/menu.js";
  </script>
+
+ <style>
+ 
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--darkBG);
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+a:focus {
+  /* background-color: var(--accentSec); */
+  color: var(--accentPr);
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    /* margin-left: ; */
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+    border-bottom: 2px solid var(--accentPr);
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }}
+ </style>
