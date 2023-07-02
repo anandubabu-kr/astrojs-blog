@@ -3,17 +3,14 @@ import Hamburger from 'components/Hamburger.astro';
 import Navigation from 'components/Navigation.astro';
 import ThemeIcon from 'components/ThemeIcon.astro';
 ---
-<header>
- <nav>
-   <Hamburger />
-   <ThemeIcon />
+<div>
+ <nav class='border-b-2 border-accentSec flex flex-row justify-between p-4'>
    <Navigation />
+   <ThemeIcon />
+   <!-- <Hamburger /> -->
  </nav>
-</header>
+</div>
 
 <style>
-header nav {
-  display: flex;
-  justify-content: space-between;
-}
+
 </style>

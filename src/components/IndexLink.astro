@@ -1,0 +1,13 @@
+---
+const { path,text,src } = Astro.props;
+---
+
+      <a
+        href={path}
+        class="flex bg-slate-700 p-2 rounded-md items-center gap-2"
+      >
+        <img src="" class="w-10 h-10 rounded-full bg-slate-600" alt={text} />
+        <p>
+        {text}
+        </p>
+      </a>

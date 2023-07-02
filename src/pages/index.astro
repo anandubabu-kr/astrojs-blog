@@ -1,10 +1,21 @@
 ---
 import BaseLayout from 'layouts/BaseLayout.astro';
 import Greeting from 'components/Greeting';
-const pageTitle = "Home Page";
+import IndexLink from 'components/IndexLink.astro';
+const pageTitle = "";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Hey devs</h2>
-  <h1>Welcome to your guru</h1>
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <header class="text-center">
+    <h2>Hey devs</h2>
+    <h1>Welcome to your guru</h1>
+  </header>
+  <main>
+    <section class="flex gap-2 flex-col sm:flex-row justify-center">
+    <IndexLink path='/sub/react' text='react' />
+    <IndexLink path='/sub/javascript' text='Javascript' />
+
+    </section>
+  </main>
+  <!-- <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} /> -->
 </BaseLayout>
